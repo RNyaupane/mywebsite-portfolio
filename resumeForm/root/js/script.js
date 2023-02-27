@@ -99,3 +99,37 @@ submitBtn.addEventListener('click', () => {
  
         
 });
+
+//Add text button
+$(document).ready(function(){
+    $("#add-btn").on("click" ,function(){
+    $("#addToThis").append("<div class='input-group mb-3'><input type='text'class='form-control' aria-label='Text input with dropdown button'placeholder='Enter skill'> "+
+      "<select class='form-select' aria-label='Default select example'>"+
+        "<option selected>Select Level</option>"+
+        "<option value='1'>Novice</option>"+
+        "<option value='2'>Beginner</option>"+
+        "<option value='3'>Skillfull</option>"+
+        "<option value='4'>Experienced</option>"+
+        "<option value='5'>Expert</option></select></div>");
+
+    });
+    $("#remove-btn").on("click", function() {  
+        $("#addToThis").children().last().remove();  
+    });
+});
+$(document).ready(function(){
+    $("#add-language-btn").on("click" ,function(){
+    $("#add-languageToThis").append("<div class='input-group mb-3'>"+
+    "<input type='text' class='form-control' aria-label='Text input with dropdown button' placeholder='Enter language name'>"+
+      "<select class='form-select' aria-label='Default select example'>"+
+        "<option selected ><strong>Select Level</strong></option>"+
+        "<option value='1'>Native Speakers</option>"+
+        "<option value='2'>Highly Proficient</option>"+
+        "<option value='3'>Very Good Command</option>"+
+      "</select></div>");
+
+    });
+    $("#remove-language-btn").on("click", function() {  
+        $("#add-languageToThis").children().last().remove();  
+    });
+});
