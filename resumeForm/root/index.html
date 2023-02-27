@@ -215,14 +215,14 @@
                   <h4>
                     Skills
                   </h4>
-                  <div class="mt-2">
-                    <label class="form-label">Skill 1:</label>
+                  <div class="mt-2" id="addToThis">
+                    <!-- <label class="form-label">Skill 1:</label> -->
                     <div class="input-group mb-3">
                         <input 
                             type="text" 
                             class="form-control" 
                             aria-label="Text input with dropdown button"
-                            placeholder="Enter skill 1">
+                            placeholder="Enter skill">
                           <select class="form-select" aria-label="Default select example">
                             <option selected>Select Level</option>
                             <option value="1">Novice</option>
@@ -232,55 +232,33 @@
                             <option value="5">Expert</option>
                           </select>
                       </div>
-                  </div>
-                  <div class="mt-2">
-                    <label class="form-label">Skill 2:</label>
-                    <div class="input-group mb-3">
-                        <input 
-                            type="text" 
-                            class="form-control" 
-                            aria-label="Text input with dropdown button"
-                            placeholder="Enter skill 1">
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected ><strong>Select Level</strong></option>
-                            <option value="1">Novice</option>
-                            <option value="2">Beginner</option>
-                            <option value="3">Skillfull</option>
-                            <option value="4">Experienced</option>
-                            <option value="5">Expert</option>
-                          </select>
-                      </div>
-                  </div>
-                  <div class="mt-2">
-                    <label class="form-label">Skill 3:</label>
-                    <div class="input-group mb-3">
-                        <input 
-                            type="text" 
-                            class="form-control" 
-                            aria-label="Text input with dropdown button"
-                            placeholder="Enter skill 1">
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected ><strong>Select Level</strong></option>
-                            <option value="1">Novice</option>
-                            <option value="2">Beginner</option>
-                            <option value="3">Skillfull</option>
-                            <option value="4">Experienced</option>
-                            <option value="5">Expert</option>
-                          </select>
-                      </div>
-                  </div>
+                </div>
+                
+                  
                   <div class="d-grid gap-2">
                     <button 
                         class="btn btn-primary" 
                         type="button"
                         id="add-btn"
-                        style="background-color: rgb(255, 255, 255); 
+                        style="background-color: #008CBA;
                         height: 50px;
-                        /* border: 2px solid red; */
-                        color: black;" ><strong>Add Skils</strong> </button>
+                        color: rgb(255, 255, 255);" 
+                        onclick="add_field();">Add Skils</button>
+                  </div><br>
+                  <div class="d-grid gap-2">
+                    <button 
+                        class="btn btn-primary" 
+                        type="button"
+                        id="remove-btn"
+                        style="background-color:#f44336;
+                        height: 50px;
+                        color: rgb(255, 255, 255);" 
+                        onclick="add_field();">Remove Skils</button>
                   </div>
                   
+                  
                 </div>
+                 
                 <div class="step">
                   <h4>
                     Profile
@@ -382,11 +360,11 @@
                   </div>
                       
                 </div>
-                <div class="step">
+               <div class="step">
                     <h4>
                         Language You know
                     </h4>
-                    <div class="mt-2">
+                    <div class="mt-2" id="add-languageToThis">
                         <div class="input-group mb-3">
                             <input 
                                 type="text" 
@@ -400,18 +378,27 @@
                                 <option value="3">Very Good Command</option>
                               </select>
                           </div>
-                          <div class="d-grid gap-2">
-                            <button 
-                                class="btn btn-primary" 
-                                type="button"
-                                id="add-btn"
-                                style="background-color: rgb(255, 255, 255); 
-                                height: 50px;
-                                
-                                /* border: 2px solid rgb(0, 217, 255); */
-                                color: black;" ><strong>Add Language</strong> </button>
-                          </div>
                       </div>
+                      <div class="d-grid gap-2">
+                        <button 
+                            class="btn btn-primary" 
+                            type="button"
+                            id="add-language-btn"
+                            style="background-color: #008CBA; 
+                            height: 50px;
+                            color: rgb(255, 255, 255);" >Add Language</button>
+                      </div>
+                      <br>
+                      <div class="d-grid gap-2">
+                        <button 
+                            class="btn btn-primary" 
+                            type="button"
+                            id="remove-language-btn"
+                            style="background-color:#f44336;
+                            height: 50px;
+                            color: rgb(255, 255, 255);" ><strong>Remove Language</strong> </button>
+                      </div>
+                      <br>
                     <h4>
                         Upload Image
                     </h4>
